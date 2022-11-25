@@ -1,0 +1,89 @@
+main {
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+main>h1 {
+    color: var(--white);
+    margin: 5vh 0 2vh 0;
+    font-size: calc(1.5vh + 1.5vw + 1vmin);
+}
+
+main>h1>a:nth-child(1) {
+    color: var(--red);
+    font-size: calc(1vh + 1vw + 0.5vmin);
+    position: absolute;
+    left: 8%;
+}
+
+main>h1>a:nth-child(2) {
+    color: var(--red);
+    font-size: calc(1vh + 1vw + 0.5vmin);
+    position: absolute;
+    right: 8%;
+}
+
+main>h1>a:hover {
+    filter: brightness(0.8);
+}
+
+main>.table {
+    overflow-x: auto;
+    margin-bottom: 5vh;
+}
+
+main>.table::-webkit-scrollbar {
+    width: calc(0.5vh + 0.5vw);
+}
+
+main>.table::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: calc(0.5vh + 0.5vw);
+}
+
+main>.table>table {
+    border-collapse: collapse;
+    background: var(--white);
+    top: 0;
+    width: 100%;
+}
+
+main>.table table,
+main>.table th,
+main>.table td {
+    border: calc(0.08vh + 0.08vw) solid var(--black);
+
+}
+
+main>.table>table>tbody>tr:nth-child(2n+1) {
+    background: var(--blue-1);
+}
+
+main>.table>table td,
+main>.table>table th {
+    padding: calc(0.3vh + 0.3vw) calc(0.5vh + 0.6vw);
+    white-space: nowrap;
+    color: var(--black);
+    text-align: center;
+    font-size: calc(0.6vh + 0.6vw + 0.5vmin);
+}
+
+main>.table>table th {
+    padding: calc(0.8vh + 0.8vw) calc(1.2vh + 1.2vw);
+    font-size: calc(1vh + 1vw + 0.5vmin);
+}
+
+main>.table>table .total {
+    padding: calc(0.5vh + 0.6vw);
+    font-size: calc(1vh + 1vw + 0.5vmin);
+    font-weight: 900;
+}

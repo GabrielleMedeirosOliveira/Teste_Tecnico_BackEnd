@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --off-white: #cad2c5;
+    --black: #000000;
+    --red: #e63946;
+    --blue-1: #457b9d;
+    --blue-2: #468faf;
+    --blue-3: #1d3557;
+}
+
+
+body {
+    background: var(--blue-3);
+}
