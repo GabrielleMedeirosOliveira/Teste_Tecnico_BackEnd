@@ -23,7 +23,6 @@ const createTable = async () => {
 
     tbody.appendChild(tr);
   }
-  tfoter.innerText = `Saldo total em conta: R$ ${transactionsData.total_account_balance}`;
 };
 createTable();
 

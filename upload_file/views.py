@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from rest_framework.views import APIView, Response, Request
 
-from utils import formatters
+from utils.formatters import format
 from .models import Transaction
 from .serializers import TransactionSerializer
 
@@ -40,8 +40,8 @@ def treat_data(request):
                 }
             )
 
-    # for transaction in transactions_data:
-    #     Transaction.objects.create(**transaction)
+    for transaction in transactions_data:
+       Transaction.objects.create(**transaction)
 
     return HttpResponseRedirect("/transactions/")
 
